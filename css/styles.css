@@ -1,0 +1,160 @@
+html {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+}
+
+header > a {
+  display: inline-block;
+  margin: 20px 0 20px 40px;
+}
+
+header > a h1 {
+  line-height: 0;
+}
+
+header > a h1 img {
+  width: 175px;
+}
+
+header .humberger-menu {
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 30;
+  cursor: pointer;
+}
+
+header .humberger-menu span {
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  left: 0px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+header .humberger-menu span:nth-child(1) {
+  top: 0px;
+}
+
+header .humberger-menu span:nth-child(2) {
+  top: 10px;
+}
+
+header .humberger-menu span:nth-child(3) {
+  top: 20px;
+}
+
+header .humberger-menu.active span:nth-child(1) {
+  top: 10px;
+  left: 0;
+  -webkit-transform: rotate(-405deg);
+          transform: rotate(-405deg);
+  background-color: #fff;
+}
+
+header .humberger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+header .humberger-menu.active span:nth-child(3) {
+  top: 10px;
+  left: 0;
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+  background-color: #fff;
+}
+
+header .bg {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+header .bg.active {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+header #humberger-navigation {
+  width: 300px;
+  height: 100vh;
+  background-color: #121212;
+  color: #fff;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header #humberger-navigation.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+header #humberger-navigation .sections {
+  margin-top: 60px;
+}
+
+header #humberger-navigation .sections li {
+  padding: 20px 0;
+  border-bottom: 1px solid #fff;
+}
+
+header #humberger-navigation .sections li:nth-of-type(1) {
+  border-top: 1px solid #fff;
+}
+
+header #humberger-navigation .sections li a {
+  color: #fff;
+}
+
+header #humberger-navigation .sns {
+  margin-top: 64px;
+}
+
+header #humberger-navigation .sns li {
+  margin-bottom: 16px;
+}
+
+header #humberger-navigation .sns li a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+main .sec-title {
+  padding-top: 80px;
+}
+/*# sourceMappingURL=styles.css.map */
