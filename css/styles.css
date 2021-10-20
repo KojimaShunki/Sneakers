@@ -2,6 +2,10 @@ html {
   font-size: 100%;
 }
 
+body {
+  font-size: 0.9rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -154,7 +158,64 @@ header #humberger-navigation .sns li a {
   font-size: 0.9rem;
 }
 
-main .sec-title {
-  padding-top: 80px;
+section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+section .sec-title {
+  font-size: 2.25rem;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#feature ul {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 24px;
+}
+
+#feature ul li {
+  -webkit-box-shadow: 0px 0px 8px  #000;
+          box-shadow: 0px 0px 8px  #000;
+}
+
+#feature ul li img {
+  width: 100%;
+  height: auto;
+}
+
+#feature ul li .text {
+  padding: 24px 32px;
+  text-align: left;
+}
+
+#feature ul li .text p:nth-of-type(1) {
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+
+#feature ul li .text p:nth-of-type(3) {
+  text-align: right;
+  font-size: 0.75rem;
+  margin-top: 32px;
+}
+
+#contact {
+  background-color: #121212;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#contact .sec-title {
+  color: #fff;
+  font-size: 2.25rem;
 }
 /*# sourceMappingURL=styles.css.map */
