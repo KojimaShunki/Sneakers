@@ -161,17 +161,24 @@ header {
 
 section {
   text-align: center;
-  margin-top: 50px;
   margin-bottom: 60px;
+
   .sec-title {
     font-size: 2.25rem;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 30px;
   }
 }
 
+#pickup {
+.center { margin: 0 0 50px;}
+.center img { width: 100%; height: auto;}
+.center .slick-next { right: 20px; z-index: 99;}
+.center .slick-prev { left: 15px; z-index: 100;}
+}
+
 #feature {
-  ul {
+  .wrapper {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 16px;
@@ -210,9 +217,57 @@ section {
   background-color: $font-color;
   text-align: center;
   padding-top: 50px;
+  color: #fff;
 
   .sec-title {
-    color: #fff;
     font-size: 2.25rem;
+    padding-bottom: 30px;
+  }
+
+  .wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 16px 60px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+      width: 45%;
+      p {
+        margin-bottom: 30px;
+      }
+    }
+
+    form {
+      width: 45%;
+      input,
+      textarea {
+        background-color: #fff;
+        width: 100%;
+        padding: 10px;
+      }
+
+      dd {
+        margin-bottom: 20px;
+      }
+
+      button {
+        background-color: $font-color;
+        border: 1px solid #fff;
+        width: 200px;
+        height: 45px;
+
+        &:hover {
+          background-color: #fff;
+          color: $font-color;
+        }
+      }
+    }
+  }
+
+  > p {
+    font-size: 0.75rem;
+    padding-bottom: 10px;
   }
 }
