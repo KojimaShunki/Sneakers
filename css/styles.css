@@ -191,8 +191,8 @@ section .sec-title {
   padding: 0 16px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: auto auto auto;
   gap: 24px;
 }
@@ -206,8 +206,8 @@ section .sec-title {
   width: 100%;
   height: auto;
   opacity: 0;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -297,5 +297,48 @@ section .sec-title {
 #contact > p {
   font-size: 0.75rem;
   padding-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  header > a {
+    margin: 20px 0 20px 10px;
+  }
+  header .humberger-menu {
+    top: 32px;
+    right: 16px;
+  }
+  section {
+    margin-bottom: 90px;
+  }
+  section .sec-title {
+    font-size: 1.5rem;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  #pickup {
+    margin-bottom: 0;
+  }
+  #contact {
+    padding-top: 80px;
+  }
+  #contact .sec-title {
+    font-size: 1.5rem;
+  }
+  #contact .wrapper {
+    padding-bottom: 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .wrapper .text {
+    width: 100%;
+  }
+  #contact .wrapper form {
+    width: 100%;
+  }
+  #contact .wrapper form button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

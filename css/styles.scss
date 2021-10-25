@@ -204,7 +204,7 @@ section {
     margin: 0 auto;
     padding: 0 16px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: auto auto auto;
     gap: 24px;
 
@@ -215,7 +215,7 @@ section {
         width: 100%;
         height: auto;
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(50px);
         transition: 1s;
 
         &.show {
@@ -299,5 +299,59 @@ section {
   > p {
     font-size: 0.75rem;
     padding-bottom: 10px;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  header {
+    > a {
+      margin: 20px 0 20px 10px;
+    }
+
+    .humberger-menu {
+      top: 32px;
+      right: 16px;
+    }
+  }
+
+  section {
+    margin-bottom: 90px;
+
+    .sec-title {
+      font-size: 1.5rem;
+      padding-top: 80px;
+      padding-bottom: 20px;
+    }
+  }
+
+  #pickup {
+    margin-bottom: 0;
+  }
+
+  #contact {
+    padding-top: 80px;
+
+    .sec-title {
+      font-size: 1.5rem;
+    }
+
+    .wrapper {
+      padding-bottom: 90px;
+      flex-direction: column;
+
+      .text {
+        width: 100%;
+      }
+
+      form {
+        width: 100%;
+
+        button {
+          width: 100%;
+        }
+      }
+    }
   }
 }

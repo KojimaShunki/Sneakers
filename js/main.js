@@ -73,6 +73,12 @@ $('.slider').slick({
   slidesToShow: 3,
 });
 
+if (window.matchMedia('(max-width: 900px)'.matches)){
+  $('.slider').slick({
+    slidesToShow: 1,
+  });
+};
+
 $('.slider').slick({
   nextArrow: '<button type="button" class="slick-next"></button>',
 });
